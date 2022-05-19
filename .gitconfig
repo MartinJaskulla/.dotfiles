@@ -1,0 +1,10 @@
+[user]
+        email = 35801656+MartinJaskulla@users.noreply.github.com
+        name = Martin Jaskulla
+[core]
+        autocrlf = input
+[merge]
+        conflictStyle = diff3
+[credential]
+        helper = osxkeychain
+        useHttpPath = true
