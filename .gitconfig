@@ -7,4 +7,4 @@
         conflictStyle = diff3
 [credential]
         helper = osxkeychain
-        useHttpPath = true
+        # When you have multiple git accounts, add the username in the remote url and osxkeychain will use the correct credentials: https://MartinJaskulla@github.com/MartinJaskulla/.dotfiles.git 
