@@ -34,6 +34,7 @@ brew install docker
 brew install tmux
 brew install pyenv
 brew install nvm
+brew install starship
 
 brew install --cask google-chrome
 brew install --cask firefox
