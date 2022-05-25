@@ -19,6 +19,10 @@ fi;
 dotfiles checkout
 dotfiles config status.showUntrackedFiles no
 
+# Oh My Zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Homebrew
 which -s brew
 if [[ $? = 0 ]] ; then
   echo "Homebrew already installed. Updating..."
