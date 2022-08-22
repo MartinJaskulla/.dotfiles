@@ -16,11 +16,13 @@ call plug#end()
 let g:coc_global_extensions = [
   \ 'coc-pairs',
   \ 'coc-tsserver',
+  \ 'coc-html',
   \ 'coc-eslint', 
-  \ 'coc-prettier', 
   \ 'coc-json', 
+  \ 'coc-prettier', 
   \ ]
-" The default <leader> key is backslash
+
+" The <leader> key is backslash by default
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -28,25 +30,15 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <F6> <Plug>(coc-rename)
 nmap <F2> <Plug>(coc-diagnostic-next)
 nmap <F3> <Plug>(coc-diagnostic-prev)
+" Auto-complete (Only works in insert mode, because inoremap)
 inoremap <silent><expr> <c-space> coc#refresh()
-" TODO Try all below
-nmap <silent> <F4> <Plug>(coc-range-select)
-xmap <silent> <F4> <Plug>(coc-range-select)
-" Remap for do codeAction of current line
 nmap <leader>ac  <Plug>(coc-codeaction)
-" Fix autofix problem of current line
 nmap <leader>qf  <Plug>(coc-fix-current)
+" nmap <silent> <F4> <Plug>(coc-range-select)
+" xmap <silent> <F4> <Plug>(coc-range-select)
+" TODO coc-range-select-backward
 
 " Theme
 colorscheme gruvbox
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 
-
-nmap <F1>  :NERDTreeToggle<CR>
-
-" Set pwd to the currently opened file
-set autochdir
-set tabstop=2 softtabstop=2
-set shiftwidth=2
-set expandtab
-set smartindent
